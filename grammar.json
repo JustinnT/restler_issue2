@@ -1,0 +1,2162 @@
+{
+  "Requests": [
+    {
+      "id": {
+        "endpoint": "/nf-instances",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "nnrf-disc"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v1"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "nf-instances"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "target-nf-type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        {
+                          "Enum": [
+                            "target-nf-type",
+                            "String",
+                            [
+                              "NRF",
+                              "UDM",
+                              "AMF",
+                              "SMF",
+                              "AUSF",
+                              "NEF",
+                              "PCF",
+                              "SMSF",
+                              "NSSF",
+                              "UDR",
+                              "LMF",
+                              "GMLC",
+                              "5G_EIR",
+                              "SEPP",
+                              "UPF",
+                              "N3IWF",
+                              "AF",
+                              "UDSF",
+                              "BSF",
+                              "CHF",
+                              "NWDAF",
+                              "PCSCF",
+                              "CBCF",
+                              "HSS",
+                              "UCMF",
+                              "SOR_AF",
+                              "SPAF",
+                              "MME",
+                              "SCSAS",
+                              "SCEF",
+                              "SCP",
+                              "NSSAAF",
+                              "ICSCF",
+                              "SCSCF",
+                              "DRA",
+                              "IMS_AS"
+                            ],
+                            null
+                          ]
+                        },
+                        "NRF",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "requester-nf-type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        {
+                          "Enum": [
+                            "requester-nf-type",
+                            "String",
+                            [
+                              "NRF",
+                              "UDM",
+                              "AMF",
+                              "SMF",
+                              "AUSF",
+                              "NEF",
+                              "PCF",
+                              "SMSF",
+                              "NSSF",
+                              "UDR",
+                              "LMF",
+                              "GMLC",
+                              "5G_EIR",
+                              "SEPP",
+                              "UPF",
+                              "N3IWF",
+                              "AF",
+                              "UDSF",
+                              "BSF",
+                              "CHF",
+                              "NWDAF",
+                              "PCSCF",
+                              "CBCF",
+                              "HSS",
+                              "UCMF",
+                              "SOR_AF",
+                              "SPAF",
+                              "MME",
+                              "SCSAS",
+                              "SCEF",
+                              "SCP",
+                              "NSSAAF",
+                              "ICSCF",
+                              "SCSCF",
+                              "DRA",
+                              "IMS_AS"
+                            ],
+                            null
+                          ]
+                        },
+                        "NRF",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "requester-nf-instance-id",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Uuid",
+                        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d72",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "service-names",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Array",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "",
+                          "payload": {
+                            "Fuzzable": [
+                              {
+                                "Enum": [
+                                  "",
+                                  "String",
+                                  [
+                                    "nnrf-nfm",
+                                    "nnrf-disc",
+                                    "nnrf-oauth2",
+                                    "nudm-sdm",
+                                    "nudm-uecm"
+                                  ],
+                                  null
+                                ]
+                              },
+                              "nnrf-nfm",
+                              null,
+                              null
+                            ]
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      }
+                    ]
+                  ]
+                },
+                "serialization": {
+                  "style": "Form",
+                  "explode": false
+                }
+              },
+              {
+                "name": "requester-nf-instance-fqdn",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "target-plmn-list",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "requester-plmn-list",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "target-nf-instance-id",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Uuid",
+                        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d72",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "target-nf-fqdn",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "hnrf-uri",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "snssais",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "requester-snssais",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "plmn-specific-snssai-list",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "requester-plmn-specific-snssai-list",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "dnn",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "nsi-list",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                },
+                "serialization": {
+                  "style": "Form",
+                  "explode": false
+                }
+              },
+              {
+                "name": "smf-serving-area",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "tai",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "amf-region-id",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "amf-set-id",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "guami",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "supi",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "ue-ipv4-address",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        "198.51.100.1",
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "ip-domain",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "ue-ipv6-prefix",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        "2001:db8:abcd:12::0/64",
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "pgw-ind",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "pgw",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "gpsi",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "external-group-identity",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "internal-group-identity",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "pfd-data",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "data-set",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        {
+                          "Enum": [
+                            "data-set",
+                            "String",
+                            [
+                              "SUBSCRIPTION",
+                              "POLICY",
+                              "EXPOSURE",
+                              "APPLICATION"
+                            ],
+                            null
+                          ]
+                        },
+                        "SUBSCRIPTION",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "routing-indicator",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "group-id-list",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                },
+                "serialization": {
+                  "style": "Form",
+                  "explode": false
+                }
+              },
+              {
+                "name": "dnai-list",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                },
+                "serialization": {
+                  "style": "Form",
+                  "explode": false
+                }
+              },
+              {
+                "name": "pdu-session-types",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                },
+                "serialization": {
+                  "style": "Form",
+                  "explode": false
+                }
+              },
+              {
+                "name": "event-id-list",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                },
+                "serialization": {
+                  "style": "Form",
+                  "explode": false
+                }
+              },
+              {
+                "name": "nwdaf-event-list",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                },
+                "serialization": {
+                  "style": "Form",
+                  "explode": false
+                }
+              },
+              {
+                "name": "supported-features",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "upf-iwk-eps-ind",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "chf-supported-plmn",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "preferred-locality",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "access-type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        {
+                          "Enum": [
+                            "access-type",
+                            "String",
+                            [
+                              "3GPP_ACCESS",
+                              "NON_3GPP_ACCESS"
+                            ],
+                            null
+                          ]
+                        },
+                        "3GPP_ACCESS",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "limit",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Int",
+                        "1",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "required-features",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                },
+                "serialization": {
+                  "style": "Form",
+                  "explode": false
+                }
+              },
+              {
+                "name": "complex-query",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "max-payload-size",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Int",
+                        "1",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "max-payload-size-ext",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Int",
+                        "1",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "atsss-capability",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "upf-ue-ip-addr-ind",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "client-type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "lmf-id",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "an-node-type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "rat-type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "preferred-tai",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "preferred-nf-instances",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                },
+                "serialization": {
+                  "style": "Form",
+                  "explode": false
+                }
+              },
+              {
+                "name": "target-snpn",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "requester-snpn-list",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "af-ee-data",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "w-agf-info",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "tngf-info",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "twif-info",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "target-nf-set-id",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "target-nf-service-set-id",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "nef-id",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "notification-type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        {
+                          "Enum": [
+                            "notification-type",
+                            "String",
+                            [
+                              "N1_MESSAGES",
+                              "N2_INFORMATION",
+                              "LOCATION_NOTIFICATION",
+                              "DATA_REMOVAL_NOTIFICATION",
+                              "DATA_CHANGE_NOTIFICATION",
+                              "LOCATION_UPDATE_NOTIFICATION",
+                              "NSSAA_REAUTH_NOTIFICATION",
+                              "NSSAA_REVOC_NOTIFICATION"
+                            ],
+                            null
+                          ]
+                        },
+                        "N1_MESSAGES",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "n1-msg-class",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        {
+                          "Enum": [
+                            "n1-msg-class",
+                            "String",
+                            [
+                              "5GMM",
+                              "SM",
+                              "LPP",
+                              "SMS",
+                              "UPDP",
+                              "LCS"
+                            ],
+                            null
+                          ]
+                        },
+                        "5GMM",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "n2-info-class",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        {
+                          "Enum": [
+                            "n2-info-class",
+                            "String",
+                            [
+                              "SM",
+                              "NRPPa",
+                              "PWS",
+                              "PWS-BCAL",
+                              "PWS-RF",
+                              "RAN",
+                              "V2X"
+                            ],
+                            null
+                          ]
+                        },
+                        "SM",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "serving-scope",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                },
+                "serialization": {
+                  "style": "Form",
+                  "explode": false
+                }
+              },
+              {
+                "name": "imsi",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "ims-private-identity",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "ims-public-identity",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "msisdn",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "preferred-api-versions",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "v2x-support-ind",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "redundant-gtpu",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "redundant-transport",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "ipups",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "scp-domain-list",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                },
+                "serialization": {
+                  "style": "Form",
+                  "explode": false
+                }
+              },
+              {
+                "name": "address-domain",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "ipv4-addr",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        "198.51.100.1",
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "ipv6-prefix",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        "2001:db8:abcd:12::0/64",
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "served-nf-set-id",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "remote-plmn-id",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "data-forwarding",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "preferred-full-plmn",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "requester-features",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "realm-id",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "storage-id",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "vsmf-support-ind",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "Accept-Encoding",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              },
+              {
+                "name": "If-None-Match",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "127.0.0.1:7777"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/searches/{searchId}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "nnrf-disc"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v1"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "searches"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring",
+            null,
+            null
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "Accept-Encoding",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "127.0.0.1:7777"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/searches/{searchId}/complete",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "nnrf-disc"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v1"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "searches"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring",
+            null,
+            null
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "complete"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "Accept-Encoding",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring",
+                        null,
+                        null
+                      ]
+                    },
+                    "isRequired": false,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "127.0.0.1:7777"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    }
+  ]
+}

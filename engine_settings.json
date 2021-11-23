@@ -1,0 +1,11 @@
+{
+  "per_resource_settings": {},
+  "max_combinations": 20,
+  "target_ip": "127.0.0.1",
+  "target_port": 12345,
+  "test_combinations_settings": {
+    "query_param_combinations": {
+      "param_kind": "required"
+    }
+  }
+}
